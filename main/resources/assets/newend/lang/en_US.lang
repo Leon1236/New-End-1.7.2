@@ -1,0 +1,25 @@
+itemGroup.newend=Newend
+tile.BlockEndOre.name=End Ore
+tile.BlockEndBrick.name=End Brick
+tile.BlockEndWood.name=End Wood
+tile.BlockEndPlank.name=End Plank
+tile.BlockEndBlock.name=End Block
+tile.BlockEndLeaves.name=End Leaves
+tile.BlockEndSapling.name=End Ore
+
+tile.BlockEndCoalOre.name=End Coal Ore
+tile.BlockEndRedstoneOre.name=End Redstone Ore
+tile.BlockEndLapisOre.name=End Lapis Ore
+tile.BlockEndQuartzOre.name=End Guartz Ore
+tile.BlockEndIronOre.name=End Iron Ore
+tile.BlockEndGoldOre.name=End Gold Ore
+tile.BlockEndDiamondOre.name=End Diamond Ore
+tile.BlockEndEmeraldOre.name=End Emerald Ore
+
+tile.BlockEndCopperOre.name=End Copper Ore
+tile.BlockEndTinOre.name=End Tin Ore
+tile.BlockEndLeadOre.name=End Lead Ore
+tile.BlockEndBronzeOre.name=End Bronze Ore
+tile.BlockEndUraniumOre.name=End Uranium Ore
+
+tile.BlockEndApatiteOre.name=End Appatite Ore

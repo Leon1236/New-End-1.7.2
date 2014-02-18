@@ -1,0 +1,16 @@
+[
+{
+  "modid": "newend",
+  "name": "New End",
+  "description": "New End is mod that adds new dimension better than Vanilla end",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authors": ["Leon1236"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

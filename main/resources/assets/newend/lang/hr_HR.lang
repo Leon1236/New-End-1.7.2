@@ -1,0 +1,25 @@
+itemGroup.newend.name=Novi End
+tile.BlockEndOre.name=End ruda
+tile.BlockEndBrick.name=End cigla
+tile.BlockEndWood.name=End drvo
+tile.BlockEndPlank.name=End daska
+tile.BlockEndBlock.name=End blok
+tile.BlockEndLeaves.name=End lièæe
+tile.BlockEndSapling.name=End sadnica
+
+tile.BlockEndCoalOre.name=End ruda ugljen
+tile.BlockEndRedstoneOre.name=End Redstone Ore
+tile.BlockEndLapisOre.name=End Lapis Ore
+tile.BlockEndQuartzOre.name=End Guartz Ore
+tile.BlockEndIronOre.name=End ruda željezo
+tile.BlockEndGoldOre.name=End ruda zlato
+tile.BlockEndDiamondOre.name=End ruda diamant
+tile.BlockEndEmeraldOre.name=End Emerald Ore
+
+tile.BlockEndCopperOre.name=End ruda bakar
+tile.BlockEndTinOre.name=End ruda kositar
+tile.BlockEndLeadOre.name=End ruda olovo
+tile.BlockEndBronzeOre.name=End ruda bronca
+tile.BlockEndUraniumOre.name=End ruda uranij
+
+tile.BlockEndApatiteOre.name=End Appatite Ore
