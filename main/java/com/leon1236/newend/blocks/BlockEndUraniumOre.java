@@ -9,7 +9,7 @@ import com.leon1236.newend.lib.Strings;
 
 public class BlockEndUraniumOre extends Block {
 
-	public BlockEndUraniumOre(int id, Material p_i45394_1_) {
+	public BlockEndUraniumOre(Material p_i45394_1_) {
 		
 			super(p_i45394_1_);
 			this.setStepSound(Block.soundTypeStone);

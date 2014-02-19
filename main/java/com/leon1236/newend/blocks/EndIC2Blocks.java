@@ -5,7 +5,6 @@ import net.minecraft.block.material.Material;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 
-import com.leon1236.newend.lib.Block_ID;
 import com.leon1236.newend.lib.Strings;
 
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -21,11 +20,11 @@ public class EndIC2Blocks {
 	public static void init() {
 		
 	//Spreading all blocks to different classes. They carry the blockID
-		BlockEndCopperOre = new BlockEndCopperOre(Block_ID.BlockEndCopperOre_ID, Material.rock);
-		BlockEndTinOre = new BlockEndTinOre(Block_ID.BlockEndTinOre_ID, Material.rock);
-		BlockEndLeadOre = new BlockEndLeadOre(Block_ID.BlockEndLeadOre_ID, Material.rock);
-		BlockEndBronzeOre = new BlockEndBronzeOre(Block_ID.BlockEndBronzeOre_ID, Material.rock);
-		BlockEndUraniumOre = new BlockEndUraniumOre(Block_ID.BlockEndUraniumOre_ID, Material.rock);
+		BlockEndCopperOre = new BlockEndCopperOre(Material.rock);
+		BlockEndTinOre = new BlockEndTinOre(Material.rock);
+		BlockEndLeadOre = new BlockEndLeadOre(Material.rock);
+		BlockEndBronzeOre = new BlockEndBronzeOre(Material.rock);;
+		BlockEndUraniumOre = new BlockEndUraniumOre(Material.rock);
 		
 	//Registering all the blocks. Args: block, name 
 		GameRegistry.registerBlock(BlockEndCopperOre, Strings.BlockEndCopperOre_NAME);

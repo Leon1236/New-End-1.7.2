@@ -9,7 +9,7 @@ import com.leon1236.newend.lib.Strings;
 
 public class BlockEndRedstoneOre extends Block {
 
-	public BlockEndRedstoneOre(int id, Material p_i45394_1_) {
+	public BlockEndRedstoneOre(Material p_i45394_1_) {
 		
 			super(p_i45394_1_);
 			this.setStepSound(Block.soundTypeStone);

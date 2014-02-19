@@ -5,7 +5,6 @@ import net.minecraft.block.material.Material;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 
-import com.leon1236.newend.lib.Block_ID;
 import com.leon1236.newend.lib.Strings;
 
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -27,12 +26,12 @@ public class EndBlocks {
 public static void init(){
                 
     /*Spreading all blocks to different classes. They carry the blockID*/
-	BlockEndOre = new BlockEndOre(Block_ID.BlockEndOre_ID, Material.rock);
-	BlockEndBrick = new BlockEndBrick(Block_ID.BlockEndBrick_ID, Material.rock);
-	BlockEndWood = new BlockEndWood(Block_ID.BlockEndWood_ID, Material.rock);
-	BlockEndPlank = new BlockEndPlank(Block_ID.BlockEndPlank_ID, Material.rock);
-	BlockEndBlock = new BlockEndBlock(Block_ID.BlockEndBlock_ID, Material.rock);
-	BlockEndLeaves = new BlockEndLeaves(Block_ID.BlockEndLeaves_ID, Material.rock);
+	BlockEndOre = new BlockEndOre(Material.rock);
+	BlockEndBrick = new BlockEndBrick(Material.rock);
+	BlockEndWood = new BlockEndWood(Material.rock);
+	BlockEndPlank = new BlockEndPlank(Material.rock);
+	BlockEndBlock = new BlockEndBlock(Material.rock);
+	BlockEndLeaves = new BlockEndLeaves(Material.rock);
 	
 	
 	/*Registering all the blocks. Args: block, name*/

@@ -18,7 +18,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 
 public class BlockEndLeaves extends Block {
 
-	public BlockEndLeaves(int id, Material p_i45394_1_) {
+	public BlockEndLeaves(Material p_i45394_1_) {
 		
 			super(p_i45394_1_);
 			this.setStepSound(Block.soundTypeGrass);

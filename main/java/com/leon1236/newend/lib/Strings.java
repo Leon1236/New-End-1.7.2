@@ -48,7 +48,7 @@ public class Strings {
 	
 	//IC2 items
 		public static final String IC_EndCrushedOre_NAME = "IC_EndCrushedOre";
-		public static final String IC_EndPurifiedChrushedOre_NAME = "IC_EndPurifiedChrushedOre";
+		public static final String IC_EndPurifiedCrushedOre_NAME = "IC_EndPurifiedCrushedOre";
 		public static final String IC_EndDustSmall_NAME = "IC_EndDustSmall";
 		public static final String IC_EndDust_NAME = "IC_EndDust";
 		public static final String IC_EndPlate_NAME = "IC_EndPlate";

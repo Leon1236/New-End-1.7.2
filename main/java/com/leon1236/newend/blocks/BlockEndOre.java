@@ -9,7 +9,7 @@ import com.leon1236.newend.lib.Strings;
 
 public class BlockEndOre extends Block {
 
-	public BlockEndOre(int id, Material p_i45394_1_) {
+	public BlockEndOre(Material p_i45394_1_) {
 		
 			super(p_i45394_1_);
 			this.setStepSound(Block.soundTypeStone);

@@ -4,7 +4,10 @@ import net.minecraft.creativetab.CreativeTabs;
 
 import com.leon1236.newend.blocks.EndBlocks;
 import com.leon1236.newend.blocks.EndForestryBlocks;
+import com.leon1236.newend.blocks.EndIC2Blocks;
 import com.leon1236.newend.blocks.EndVanillaBlocks;
+import com.leon1236.newend.items.EndIC2Items;
+import com.leon1236.newend.items.ModItems;
 import com.leon1236.newend.lib.Crafting;
 import com.leon1236.newend.lib.EndCommonProxy;
 import com.leon1236.newend.lib.References;
@@ -53,7 +56,7 @@ public class NewEnd_Main {
   		EndBlocks.init();
   		
      	// Loads all items 
-  		//ModItems.init();
+  		ModItems.init();
   		
   		//Vanilla End Ores
   		EndVanillaBlocks.init();
@@ -70,21 +73,19 @@ public class NewEnd_Main {
   		//Loads fuel handler
   		//GameRegistry.registerFuelHandler(new FuelHandler());
   		
+  		//IC2 Blocks
+  		EndIC2Blocks.init();
+		
+  		//IC2 Items
+  		EndIC2Items.init();
+  		
   	}
   	
 //init loads all gui's, listeners and more
   	@EventHandler
   	public void init(FMLInitializationEvent event){
   	
-  	/* //IC2 integration
-	    if (Loader.isModLoaded("IC2")){
-  		    EndIC2Blocks.init();
-  		    EndIC2Items.init();
-  		    Integration.IndustrialCraft();
-			System.out.println("New end IC2 integration enabled");}
-		else
-			System.out.println("IC2 not found");
-	*/
+  	
   	}
   	
 //postInit loads everything that has to load after all mods have been loaded

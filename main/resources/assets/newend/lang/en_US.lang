@@ -1,4 +1,4 @@
-itemGroup.newend=Newend
+itemGroup.newend=New End
 tile.BlockEndOre.name=End Ore
 tile.BlockEndBrick.name=End Brick
 tile.BlockEndWood.name=End Wood
@@ -23,3 +23,18 @@ tile.BlockEndBronzeOre.name=End Bronze Ore
 tile.BlockEndUraniumOre.name=End Uranium Ore
 
 tile.BlockEndApatiteOre.name=End Appatite Ore
+
+item.ItemEndIngot.name=End Ingot
+item.ItemEndCoal.name=End Coal
+item.ItemEndCharcoal.name=End Charcoal
+item.ItemEndString.name=End String
+item.ItemEndStick.name=End stick
+
+item.IC_EndCrushedOre.name=End Crushed Ore
+item.IC_EndPurifiedCrushedOre.name=End Purified Crushed Ore
+item.IC_EndDustSmall.name=End Small Dust
+item.IC_EndDust.name=End Dust
+item.IC_EndPlate.name=End Plate
+item.IC_EndDensePlate.name=End Dense Plate
+item.IC_EndMixedMetalIngot.name=End Mixed Metal Ingot
+item.IC_EndCasing.name=End Casing

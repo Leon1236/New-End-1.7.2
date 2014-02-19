@@ -16,7 +16,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 
 public class BlockEndGoldOre extends Block {
 
-	public BlockEndGoldOre(int id, Material p_i45394_1_) {
+	public BlockEndGoldOre(Material p_i45394_1_) {
 		
 			super(p_i45394_1_);
 			this.setStepSound(Block.soundTypeStone);

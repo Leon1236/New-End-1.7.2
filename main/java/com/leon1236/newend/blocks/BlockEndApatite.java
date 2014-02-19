@@ -9,7 +9,7 @@ import com.leon1236.newend.lib.Strings;
 
 public class BlockEndApatite extends Block {
 
-	public BlockEndApatite(int id, Material p_i45394_1_) {
+	public BlockEndApatite(Material p_i45394_1_) {
 		
 			super(p_i45394_1_);
 			this.setStepSound(Block.soundTypeStone);

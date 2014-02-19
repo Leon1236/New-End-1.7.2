@@ -5,7 +5,6 @@ import net.minecraft.block.material.Material;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 
-import com.leon1236.newend.lib.Block_ID;
 import com.leon1236.newend.lib.Strings;
 
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -24,14 +23,14 @@ public class EndVanillaBlocks {
 	
 	public static void init(){
 		
-		BlockEndCoalOre = new BlockEndCoalOre(Block_ID.BlockEndCoalOre_ID, Material.rock);
-		BlockEndRedstoneOre = new BlockEndRedstoneOre(Block_ID.BlockEndRedstoneOre_ID, Material.rock);
-		BlockEndLapisOre = new BlockEndLapisOre(Block_ID.BlockEndLapisOre_ID, Material.rock);
-		BlockEndQuartzOre = new BlockEndQuartzOre(Block_ID.BlockEndQuartzOre_ID, Material.rock);
-		BlockEndIronOre = new BlockEndIronOre(Block_ID.BlockEndIronOre_ID, Material.rock);
-		BlockEndGoldOre = new BlockEndGoldOre(Block_ID.BlockEndGoldOre_ID, Material.rock);
-		BlockEndDiamondOre = new BlockEndDiamondOre(Block_ID.BlockEndDiamondOre_ID, Material.rock);
-		BlockEndEmeraldOre = new BlockEndEmeraldOre(Block_ID.BlockEndEmeraldOre_ID, Material.rock);
+		BlockEndCoalOre = new BlockEndCoalOre(Material.rock);
+		BlockEndRedstoneOre = new BlockEndRedstoneOre(Material.rock);
+		BlockEndLapisOre = new BlockEndLapisOre(Material.rock);
+		BlockEndQuartzOre = new BlockEndQuartzOre(Material.rock);
+		BlockEndIronOre = new BlockEndIronOre(Material.rock);
+		BlockEndGoldOre = new BlockEndGoldOre(Material.rock);
+		BlockEndDiamondOre = new BlockEndDiamondOre(Material.rock);
+		BlockEndEmeraldOre = new BlockEndEmeraldOre(Material.rock);
 		
 		GameRegistry.registerBlock(BlockEndCoalOre, Strings.BlockEndCoalOre_NAME);
 		GameRegistry.registerBlock(BlockEndRedstoneOre, Strings.BlockEndRedstoneOre_NAME);

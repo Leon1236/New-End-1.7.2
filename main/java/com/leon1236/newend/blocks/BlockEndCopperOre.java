@@ -9,7 +9,7 @@ import com.leon1236.newend.lib.Strings;
 
 public class BlockEndCopperOre extends Block {
 
-	public BlockEndCopperOre(int id, Material p_i45394_1_) {
+	public BlockEndCopperOre(Material p_i45394_1_) {
 		
 			super(p_i45394_1_);
 			this.setStepSound(Block.soundTypeStone);
@@ -17,7 +17,7 @@ public class BlockEndCopperOre extends Block {
 			this.setResistance(15.0F);
 			setCreativeTab(NewEnd_Main.Tab_newend); //place in creative tabs
 			this.setBlockName(Strings.BlockEndCopperOre_NAME); //name of the block in texture folder
-			this.setBlockTextureName(References.MOD_ID + ":BlockEndCoppereOre"); //sets texture for your block
+			this.setBlockTextureName(References.MOD_ID + ":BlockEndCopperOre"); //sets texture for your block
 			}
 	
 }
