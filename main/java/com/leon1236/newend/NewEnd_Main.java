@@ -64,22 +64,21 @@ public class NewEnd_Main {
   		
   	   //Forestry End Ores
   		EndForestryBlocks.init();
-  		
-  		//Crafting
-  		Crafting.loadrecipe();
-  		
-  		//Smelting
-  		Crafting.loadSmelting();
- 		
-  		//Loads fuel handler
-  		GameRegistry.registerFuelHandler(new FuelHandler());
-  		
+
   		//IC2 Blocks
   		EndIC2Blocks.init();
 		
   		//IC2 Items
   		EndIC2Items.init();
   		
+  		//Crafting
+  		Crafting.loadrecipe();
+  		
+  		//Smelting
+  		Crafting.loadSmelting();
+  		
+  		//Loads fuel handler
+  		GameRegistry.registerFuelHandler(new FuelHandler());
   	}
   	
 //init loads all gui's, listeners and more
