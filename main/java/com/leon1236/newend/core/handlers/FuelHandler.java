@@ -1,5 +1,7 @@
 package com.leon1236.newend.core.handlers;
 
+import java.util.ArrayList;
+
 import net.minecraft.item.ItemStack;
 
 import com.leon1236.newend.blocks.EndBlocks;
@@ -8,30 +10,74 @@ import com.leon1236.newend.items.ModItems;
 import cpw.mods.fml.common.IFuelHandler;
 
 public class FuelHandler implements IFuelHandler{
+	
+	private static ArrayList<FuelValue> fuelList = new ArrayList<FuelValue>();
 
-	@Override
-	public int getBurnTime(ItemStack fuel) {
-		// TODO Auto-generated method stub
+		@Override
+		public int getBurnTime(ItemStack fuel) 
+		{
+		return getFuelValue(fuel);
+		}
+
+	// Add Fuel rates
+	public static void setFuelValues()
+	{
+		addFuel(new ItemStack(ModItems.ItemEndCoal), 6400);
+		addFuel(new ItemStack(ModItems.ItemEndCharcoal), 3200);
+		addFuel(new ItemStack(EndBlocks.BlockEndWood), 1600);
+		addFuel(new ItemStack(EndBlocks.BlockEndPlank), 400);
+		addFuel(new ItemStack(ModItems.ItemEndStick), 200);
+		
+	}
+
+	private static void addFuel(ItemStack stack, int value)
+	{
+		fuelList.add(new FuelValue(stack, value));
+	}
+
+	private static int getFuelValue(ItemStack stack)
+	{
+		for (FuelValue fuelValue : fuelList)
+		{
+			ItemStack stackToCompareTo = fuelValue.getStack();
+
+			return fuelValue.getValue();
+		}
+
 		return 0;
 	}
 
-	/*public int getBurnTime(ItemStack fuel) {
-		if(fuel.itemID == ModItems.ItemEndCoal.itemID){
-			return 6400;
+	public static class FuelValue
+	{
+		private ItemStack stack;
+		private int value;
+
+		public FuelValue(ItemStack stack, int value)
+		{
+			this.setStack(stack);
+			this.setValue(value);
 		}
-		else if(fuel.itemID == ModItems.ItemEndCharcoal.itemID){
-			return 3200;
+
+		public ItemStack getStack()
+		{
+			return stack;
 		}
-		else if(fuel.itemID == EndBlocks.BlockEndWood.blockID){
-			return 1600;
+
+		public void setStack(ItemStack stack) 
+		{
+			this.stack = stack;
 		}
-		else if(fuel.itemID == EndBlocks.BlockEndPlank.blockID){
-			return 400;
+
+		public int getValue()
+		{
+			return value;
 		}
-		else if(fuel.itemID == ModItems.ItemEndStick.itemID){
-			return 200;
+
+		public void setValue(int value) 
+		{
+			this.value = value;
 		}
-		return 0;
 	}
-*/
+
+	
 }

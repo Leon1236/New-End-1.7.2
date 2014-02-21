@@ -1,14 +1,18 @@
 package com.leon1236.newend.items;
 
+import com.leon1236.newend.lib.Strings;
+
 import net.minecraft.item.Item;
+import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.oredict.OreDictionary;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 public class ModItems {
 	
 	//Tool material
-	//public static EnumToolMaterial EndToolMaterial;
+	public static ToolMaterial EndToolMaterial;
 	//public static EnumArmorMaterial EndArmorMaterial;
 	
 	//Item reg
@@ -29,7 +33,7 @@ public class ModItems {
 	
 	public static void init(){
 		
-		//EndToolMaterial = EnumHelper.addToolMaterial(Strings.EndToolMaterial, 3, 2000, 8F, 3, 30);
+		EndToolMaterial = EnumHelper.addToolMaterial(Strings.EndToolMaterial, 3, 2000, 12.0F, 3, 30);
 		//EndArmorMaterial = EnumHelper.addArmorMaterial(Strings.EndArmorMaterial, 66, new int[] { 6, 9, 9, 6 }, 30);
 		
 		ItemEndIngot = new ItemEndIngot();
@@ -38,11 +42,11 @@ public class ModItems {
 		ItemEndStick = new ItemEndStick();
 		ItemEndString = new ItemEndString();
 		
-		//EndSword = new EndSword(Item_ID.EndSword_ID -256, EndToolMaterial);
-		//EndHoe = new EndHoe(Item_ID.EndHoe_ID -256, EndToolMaterial);
-		//EndAxe = new EndAxe(Item_ID.EndAxe_ID -256, EndToolMaterial);
-		//EndPickaxe = new EndPickaxe(Item_ID.EndPickaxe_ID -256, EndToolMaterial);
-		//EndShovel = new EndShovel(Item_ID.EndShovel_ID -256, EndToolMaterial);
+		EndSword = new ToolEndSword(EndToolMaterial);
+		EndHoe = new ToolEndHoe(EndToolMaterial);
+		EndAxe = new ToolEndAxe(EndToolMaterial);
+		EndPickaxe = new ToolEndPickaxe(EndToolMaterial);
+		EndShovel = new ToolEndShovel(EndToolMaterial);
 		
 		//Armor
 		//endarmor_Helmet = new EndArmor(Item_ID.ItemEndArmor_Helmet_ID, EndArmorMaterial, 0, 0, "newendarmor");
@@ -55,6 +59,12 @@ public class ModItems {
 		GameRegistry.registerItem(ItemEndCharcoal, "ItemEndCharcoal");
 		GameRegistry.registerItem(ItemEndStick, "ItemEndStick");
 		GameRegistry.registerItem(ItemEndString, "ItemEndString");
+		
+		GameRegistry.registerItem(EndSword, "EndSword");
+		GameRegistry.registerItem(EndHoe, "EndHoe");
+		GameRegistry.registerItem(EndAxe, "EndAxe");
+		GameRegistry.registerItem(EndPickaxe, "EndPickaxe");
+		GameRegistry.registerItem(EndShovel, "EndShovel");
 		
 	}
 	

@@ -6,6 +6,7 @@ import com.leon1236.newend.blocks.EndBlocks;
 import com.leon1236.newend.blocks.EndForestryBlocks;
 import com.leon1236.newend.blocks.EndIC2Blocks;
 import com.leon1236.newend.blocks.EndVanillaBlocks;
+import com.leon1236.newend.core.handlers.FuelHandler;
 import com.leon1236.newend.items.EndIC2Items;
 import com.leon1236.newend.items.ModItems;
 import com.leon1236.newend.lib.Crafting;
@@ -19,6 +20,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
 
 
 //Basic stuff Forge needs
@@ -27,6 +29,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
     		 name 				= References.MOD_NAME,
 			 modid 				= References.MOD_ID,
 			 version 			= References.VERSION
+			// dependencies = "after:IC2; required-after:Forge@[1.7.2-10.12.0.1031)"
 		)
 
     
@@ -49,9 +52,7 @@ public class NewEnd_Main {
   	@EventHandler
   	public void preInit(FMLPreInitializationEvent event){	
   	
-  		// Loads config
-  		//ConfigurationHandler.init(new File(event.getModConfigurationDirectory().getAbsolutePath()+ File.separator + References.MOD_ID + File.separator + References.MOD_ID + ".cfg"));
-  		     
+  		    
   	    // Loads all blocks 
   		EndBlocks.init();
   		
@@ -68,10 +69,10 @@ public class NewEnd_Main {
   		Crafting.loadrecipe();
   		
   		//Smelting
-  		//Crafting.loadSmelting();
+  		Crafting.loadSmelting();
  		
   		//Loads fuel handler
-  		//GameRegistry.registerFuelHandler(new FuelHandler());
+  		GameRegistry.registerFuelHandler(new FuelHandler());
   		
   		//IC2 Blocks
   		EndIC2Blocks.init();

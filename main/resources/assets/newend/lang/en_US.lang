@@ -1,4 +1,7 @@
+# Creative Tab
 itemGroup.newend=New End
+
+# Mod Blocks
 tile.BlockEndOre.name=End Ore
 tile.BlockEndBrick.name=End Brick
 tile.BlockEndWood.name=End Wood
@@ -7,6 +10,7 @@ tile.BlockEndBlock.name=End Block
 tile.BlockEndLeaves.name=End Leaves
 tile.BlockEndSapling.name=End Ore
 
+# Vanilla Mod Blocks
 tile.BlockEndCoalOre.name=End Coal Ore
 tile.BlockEndRedstoneOre.name=End Redstone Ore
 tile.BlockEndLapisOre.name=End Lapis Ore
@@ -16,20 +20,29 @@ tile.BlockEndGoldOre.name=End Gold Ore
 tile.BlockEndDiamondOre.name=End Diamond Ore
 tile.BlockEndEmeraldOre.name=End Emerald Ore
 
+# IC2 Mod Blocks
 tile.BlockEndCopperOre.name=End Copper Ore
 tile.BlockEndTinOre.name=End Tin Ore
 tile.BlockEndLeadOre.name=End Lead Ore
 tile.BlockEndBronzeOre.name=End Bronze Ore
 tile.BlockEndUraniumOre.name=End Uranium Ore
 
+# Forestry Mod Blocks
 tile.BlockEndApatiteOre.name=End Appatite Ore
 
+# Mod Items
 item.ItemEndIngot.name=End Ingot
 item.ItemEndCoal.name=End Coal
 item.ItemEndCharcoal.name=End Charcoal
 item.ItemEndString.name=End String
 item.ItemEndStick.name=End stick
+item.ToolEndSword.name=End Sword
+item.ToolEndHoe.name=End Hoe
+item.ToolEndAxe.name=End Axe
+item.ToolEndPickaxe.name=End Pickaxe
+item.ToolEndShovel.name=End Shovel
 
+# IC2 Mod Items
 item.IC_EndCrushedOre.name=End Crushed Ore
 item.IC_EndPurifiedCrushedOre.name=End Purified Crushed Ore
 item.IC_EndDustSmall.name=End Small Dust

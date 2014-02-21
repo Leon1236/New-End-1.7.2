@@ -17,7 +17,6 @@ public class Tab_newend extends CreativeTabs {
 	}
 
 	@Override
-	@SideOnly(Side.CLIENT)
 	public ItemStack getIconItemStack(){
 
 		return new ItemStack(EndBlocks.BlockEndOre,1,0);
@@ -26,8 +25,10 @@ public class Tab_newend extends CreativeTabs {
 
 	@Override
 	public Item getTabIconItem() {
-
+		
 		return null;
 	}
+
+	
 
 }

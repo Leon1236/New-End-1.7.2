@@ -1,4 +1,7 @@
+# Creative Tab
 itemGroup.newend.name=Novi End
+
+# Mod Blocks
 tile.BlockEndOre.name=End ruda
 tile.BlockEndBrick.name=End cigla
 tile.BlockEndWood.name=End drvo
@@ -7,6 +10,7 @@ tile.BlockEndBlock.name=End blok
 tile.BlockEndLeaves.name=End lisce
 tile.BlockEndSapling.name=End sadnica
 
+# Vanilla Mod Blocks
 tile.BlockEndCoalOre.name=End ruda ugljen
 tile.BlockEndRedstoneOre.name=End Redstone ruda
 tile.BlockEndLapisOre.name=End Lapis Ore
@@ -16,20 +20,29 @@ tile.BlockEndGoldOre.name=End ruda zlato
 tile.BlockEndDiamondOre.name=End ruda diamant
 tile.BlockEndEmeraldOre.name=End ruda smaragd
 
+# IC2 Mod Blocks
 tile.BlockEndCopperOre.name=End ruda bakar
 tile.BlockEndTinOre.name=End ruda kositar
 tile.BlockEndLeadOre.name=End ruda olovo
 tile.BlockEndBronzeOre.name=End ruda bronca
 tile.BlockEndUraniumOre.name=End ruda uranij
 
+# Forestry Mod Blocks
 tile.BlockEndApatiteOre.name=End Appatite Ore
 
+# Mod Items
 item.ItemEndIngot.name=End metal
 item.ItemEndCoal.name=End ugljen
-item.ItemEndCharcoal.name=End drvenu ugljen
+item.ItemEndCharcoal.name=End drveni ugljen
 item.ItemEndString.name=End uzica
 item.ItemEndStick.name=End stap
+item.ToolEndSword.name=End mac
+item.ToolEndHoe.name=End motika
+item.ToolEndAxe.name=End sjekira
+item.ToolEndPickaxe.name=End budak
+item.ToolEndShovel.name=End lopata
 
+# IC2 Mod Items
 item.IC_EndCrushedOre.name=End mljevena ruda
 item.IC_EndPurifiedCrushedOre.name=End prociscena mljevena ruda
 item.IC_EndDustSmall.name=End prasina mala
