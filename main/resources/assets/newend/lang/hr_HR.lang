@@ -9,6 +9,11 @@ tile.BlockEndPlank.name=End daska
 tile.BlockEndBlock.name=End blok
 tile.BlockEndLeaves.name=End lisce
 tile.BlockEndSapling.name=End sadnica
+tile.BlockEndSand.name=End pijesak
+tile.BlockEndGravel.name=End sljunak
+tile.BlockEndDirt.name=End zemlja
+tile.BlockEndGrass.name=End trava
+tile.BlockEndCobblestone.name=End kaldrma
 
 # Vanilla Mod Blocks
 tile.BlockEndCoalOre.name=End ruda ugljen

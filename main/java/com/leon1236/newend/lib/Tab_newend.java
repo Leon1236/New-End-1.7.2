@@ -19,7 +19,7 @@ public class Tab_newend extends CreativeTabs {
 	@Override
 	public ItemStack getIconItemStack(){
 
-		return new ItemStack(EndBlocks.BlockEndOre,1,0);
+		return new ItemStack(EndBlocks.BlockEndOre);
 
 	}
 

@@ -42,15 +42,18 @@ public class Crafting
        
 		GameRegistry.addRecipe(new ItemStack(ModItems.ItemEndStick, 4), new Object[] {"# ","# ", Character.valueOf('#'), EndBlocks.BlockEndPlank,});
 		GameRegistry.addRecipe(new ItemStack(ModItems.ItemEndStick, 4), new Object[] {" # "," # ", Character.valueOf('#'), EndBlocks.BlockEndPlank,});
-		GameRegistry.addRecipe(new ItemStack(ModItems.ItemEndStick, 4), new Object[] {"  #",  "#", Character.valueOf('#'), EndBlocks.BlockEndPlank,});
+		GameRegistry.addRecipe(new ItemStack(ModItems.ItemEndStick, 4), new Object[] {"  #",  "  #", Character.valueOf('#'), EndBlocks.BlockEndPlank,});
 		
-		GameRegistry.addRecipe(new ItemStack(EndBlocks.BlockEndPlank, 4), new Object[] {"#", Character.valueOf('#'), EndBlocks.BlockEndWood,});
+		GameRegistry.addShapelessRecipe(new ItemStack(EndBlocks.BlockEndPlank, 4), new Object[] {"#", Character.valueOf('#'), EndBlocks.BlockEndWood,});
 		
 		GameRegistry.addRecipe(new ItemStack(ModItems.ItemEndString, 3), new Object[] {"#S","#S","#S", Character.valueOf('#'), ModItems.ItemEndIngot,Character.valueOf('S'), Items.string});
-		
+		GameRegistry.addRecipe(new ItemStack(ModItems.ItemEndString, 3), new Object[] {"###","SSS", Character.valueOf('#'), ModItems.ItemEndIngot,Character.valueOf('S'), Items.string});
+				
 		GameRegistry.addRecipe(new ItemStack(EndBlocks.BlockEndBlock, 1), new Object[] {"###","###","###", Character.valueOf('#'), ModItems.ItemEndIngot});
 		
 		GameRegistry.addRecipe(new ItemStack(EndBlocks.BlockEndBrick, 4), new Object[] {"##","##", Character.valueOf('#'), Blocks.end_stone});
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.ItemEndIngot, 9), new Object[] {"#", Character.valueOf('#'), EndBlocks.BlockEndBlock});
 		
 
 	}

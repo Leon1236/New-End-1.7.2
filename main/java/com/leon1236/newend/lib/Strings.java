@@ -10,6 +10,12 @@ public class Strings {
 		public static final String BlockEndPlank_NAME = "BlockEndPlank";
 		public static final String BlockEndBlock_NAME = "BlockEndBlock";
 		public static final String BlockEndLeaves_NAME = "BlockEndLeaves";		
+		public static final String BlockEndSand_NAME = "BlockEndSand";		
+		public static final String BlockEndGravel_NAME = "BlockEndGravel";		
+		public static final String BlockEndDirt_NAME = "BlockEndDirt";		
+		public static final String BlockEndGrass_NAME = "BlockEndGrass";		
+		public static final String BlockEndCobblestone_NAME = "BlockEndCobblestone";		
+		
 		
 		//Vanilla Blocks		
 		public static final String BlockEndCoalOre_NAME = "BlockEndCoalOre";

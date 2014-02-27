@@ -20,27 +20,42 @@ public class EndBlocks {
 	public static Block BlockEndBlock;
 	public static Block BlockEndLeaves;
 	public static Block BlockEndSapling;
+	public static Block BlockEndSand;		
+	public static Block BlockEndGravel;		
+	public static Block BlockEndDirt;		
+	public static Block BlockEndGrass;		
+	public static Block BlockEndCobblestone;	
 	
 	
         
 public static void init(){
                 
-    /*Spreading all blocks to different classes. They carry the blockID*/
-	BlockEndOre = new BlockEndOre(Material.rock);
+    /*Spreading all blocks to different classes.*/
 	BlockEndBrick = new BlockEndBrick(Material.rock);
+	BlockEndOre = new BlockEndOre(Material.rock);
 	BlockEndWood = new BlockEndWood(Material.rock);
 	BlockEndPlank = new BlockEndPlank(Material.rock);
 	BlockEndBlock = new BlockEndBlock(Material.rock);
 	BlockEndLeaves = new BlockEndLeaves(Material.rock);
+	BlockEndSand = new BlockEndSand(Material.sand);
+	BlockEndGravel = new BlockEndGravel(Material.sand);
+	BlockEndDirt = new BlockEndDirt(Material.ground);
+	BlockEndGrass = new BlockEndGrass(Material.grass);
+	BlockEndCobblestone = new BlockEndCobblestone(Material.rock);
 	
 	
 	/*Registering all the blocks. Args: block, name*/
-	GameRegistry.registerBlock(BlockEndOre, Strings.BlockEndOre_NAME);
 	GameRegistry.registerBlock(BlockEndBrick, Strings.BlockEndBrick_NAME);
+	GameRegistry.registerBlock(BlockEndOre, Strings.BlockEndOre_NAME);
 	GameRegistry.registerBlock(BlockEndWood, Strings.BlockEndWood_NAME);
 	GameRegistry.registerBlock(BlockEndPlank, Strings.BlockEndPlank_NAME);
 	GameRegistry.registerBlock(BlockEndBlock, Strings.BlockEndBlock_NAME);
 	GameRegistry.registerBlock(BlockEndLeaves, Strings.BlockEndLeaves_NAME);
+	GameRegistry.registerBlock(BlockEndSand, Strings.BlockEndSand_NAME);
+	GameRegistry.registerBlock(BlockEndGravel, Strings.BlockEndGravel_NAME);
+	GameRegistry.registerBlock(BlockEndDirt, Strings.BlockEndDirt_NAME);
+	GameRegistry.registerBlock(BlockEndGrass, Strings.BlockEndGrass_NAME);
+	GameRegistry.registerBlock(BlockEndCobblestone, Strings.BlockEndCobblestone_NAME);
 	
 	
         }
@@ -53,6 +68,7 @@ public static void init(){
           OreDictionary.registerOre("plankWood", new ItemStack(BlockEndPlank));
           OreDictionary.registerOre("leavesTree", new ItemStack(BlockEndLeaves));
           OreDictionary.registerOre("saplingTree", new ItemStack(BlockEndSapling));
+          OreDictionary.registerOre("blockCobble", new ItemStack(BlockEndCobblestone));
         
   }
 

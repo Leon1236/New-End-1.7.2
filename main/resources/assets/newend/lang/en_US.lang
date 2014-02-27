@@ -9,6 +9,11 @@ tile.BlockEndPlank.name=End Plank
 tile.BlockEndBlock.name=End Block
 tile.BlockEndLeaves.name=End Leaves
 tile.BlockEndSapling.name=End Ore
+tile.BlockEndSand.name=End Sand
+tile.BlockEndGravel.name=End Gravel
+tile.BlockEndDirt.name=End Dirt
+tile.BlockEndGrass.name=End Grass
+tile.BlockEndCobblestone.name=End Cobblestone
 
 # Vanilla Mod Blocks
 tile.BlockEndCoalOre.name=End Coal Ore
