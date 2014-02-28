@@ -10,7 +10,6 @@ import com.leon1236.newend.core.handlers.FuelHandler;
 import com.leon1236.newend.items.EndIC2Items;
 import com.leon1236.newend.items.ModItems;
 import com.leon1236.newend.lib.Crafting;
-import com.leon1236.newend.lib.EndCommonProxy;
 import com.leon1236.newend.lib.References;
 import com.leon1236.newend.lib.Tab_newend;
 
@@ -39,7 +38,7 @@ public class NewEnd_Main {
 
 			clientSide 		= References.CLIENT_PROXY_LOCATION,
 			serverSide 		= References.COMMON_PROXY_LOCATION)
-            public static     EndCommonProxy proxy;
+            public static     CommonProxy proxy;
 	
 	//Creative tab
     public static CreativeTabs Tab_newend = new Tab_newend(CreativeTabs.getNextID(), References.MOD_ID);

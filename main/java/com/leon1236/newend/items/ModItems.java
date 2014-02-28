@@ -1,19 +1,23 @@
 package com.leon1236.newend.items;
 
-import com.leon1236.newend.lib.Strings;
-
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
+import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.oredict.OreDictionary;
+
+import com.leon1236.newend.NewEnd_Main;
+import com.leon1236.newend.lib.References;
+import com.leon1236.newend.lib.Strings;
+
 import cpw.mods.fml.common.registry.GameRegistry;
 
 public class ModItems {
 	
 	//Tool material
 	public static ToolMaterial EndToolMaterial;
-	//public static EnumArmorMaterial EndArmorMaterial;
+	public static ArmorMaterial EndArmorMaterial;
 	
 	//Item reg
 	public static Item ItemEndIngot;
@@ -34,7 +38,7 @@ public class ModItems {
 	public static void init(){
 		
 		EndToolMaterial = EnumHelper.addToolMaterial(Strings.EndToolMaterial, 3, 2000, 12.0F, 3, 30);
-		//EndArmorMaterial = EnumHelper.addArmorMaterial(Strings.EndArmorMaterial, 66, new int[] { 6, 9, 9, 6 }, 30);
+		EndArmorMaterial = EnumHelper.addArmorMaterial(Strings.EndArmorMaterial, 66, new int[] { 6, 9, 9, 6 }, 30);
 		
 		ItemEndIngot = new ItemEndIngot();
 		ItemEndCoal = new ItemEndCoal();
@@ -49,10 +53,10 @@ public class ModItems {
 		EndShovel = new ToolEndShovel(EndToolMaterial);
 		
 		//Armor
-		//endarmor_Helmet = new EndArmor(Item_ID.ItemEndArmor_Helmet_ID, EndArmorMaterial, 0, 0, "newendarmor");
-		//endarmor_Chestplate = new EndArmor(Item_ID.ItemEndArmor_Chestplate_ID, EndArmorMaterial, 0, 1, "newendarmor");
-		//endarmor_Leggings = new EndArmor(Item_ID.ItemEndArmor_Leggings_ID, EndArmorMaterial, 0, 2, "newendarmor");
-		//endarmor_Boots = new EndArmor(Item_ID.ItemEndArmor_Boots_ID, EndArmorMaterial, 0, 3, "newendarmor");
+		endarmor_Helmet = new EndArmor(EndArmorMaterial, NewEnd_Main.proxy.addArmor("newendarmor"), 0).setUnlocalizedName("endarmor_Helmet").setCreativeTab(NewEnd_Main.Tab_newend).setTextureName(References.MOD_ID + ":endarmor_Helmet");
+		endarmor_Chestplate = new EndArmor(EndArmorMaterial, NewEnd_Main.proxy.addArmor("newendarmor"), 1).setUnlocalizedName("endarmor_Chestplate").setCreativeTab(NewEnd_Main.Tab_newend).setTextureName(References.MOD_ID + ":endarmor_Chestplate");
+		endarmor_Leggings = new EndArmor(EndArmorMaterial, NewEnd_Main.proxy.addArmor("newendarmor"), 2).setUnlocalizedName("endarmor_Leggings").setCreativeTab(NewEnd_Main.Tab_newend).setTextureName(References.MOD_ID + ":endarmor_Leggings");
+		endarmor_Boots = new EndArmor(EndArmorMaterial, NewEnd_Main.proxy.addArmor("newendarmor"), 3).setUnlocalizedName("endarmor_Boots").setCreativeTab(NewEnd_Main.Tab_newend).setTextureName(References.MOD_ID + ":endarmor_Boots");
 		
 		GameRegistry.registerItem(ItemEndIngot, "ItemEndIngot");
 		GameRegistry.registerItem(ItemEndCoal, "ItemEndCoal");
@@ -65,6 +69,12 @@ public class ModItems {
 		GameRegistry.registerItem(EndAxe, "EndAxe");
 		GameRegistry.registerItem(EndPickaxe, "EndPickaxe");
 		GameRegistry.registerItem(EndShovel, "EndShovel");
+		
+		GameRegistry.registerItem(endarmor_Helmet, "endarmor_Helmet");
+		GameRegistry.registerItem(endarmor_Chestplate, "endarmor_Chestplate");
+		GameRegistry.registerItem(endarmor_Leggings, "endarmor_Leggings");
+		GameRegistry.registerItem(endarmor_Boots, "endarmor_Boots");
+		
 		
 	}
 	
