@@ -46,6 +46,11 @@ item.ToolEndHoe.name=End Hoe
 item.ToolEndAxe.name=End Axe
 item.ToolEndPickaxe.name=End Pickaxe
 item.ToolEndShovel.name=End Shovel
+item.endarmor_Helmet.name=End Helmet
+item.endarmor_Chestplate.name=End Chestplate
+item.endarmor_Leggings.name=End Leggings
+item.endarmor_Boots.name=End Boots
+
 
 # IC2 Mod Items
 item.IC_EndCrushedOre.name=End Crushed Ore
