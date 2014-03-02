@@ -10,9 +10,11 @@ import com.leon1236.newend.items.EndIC2Items;
 import com.leon1236.newend.items.ModItems;
 import com.leon1236.newend.lib.Achievements;
 import com.leon1236.newend.lib.Crafting;
+import com.leon1236.newend.lib.NewEndEvents;
 import com.leon1236.newend.lib.References;
 import com.leon1236.newend.lib.Tab_newend;
 
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.SidedProxy;
@@ -50,7 +52,6 @@ public class NewEnd_Main {
   	@EventHandler
   	public void preInit(FMLPreInitializationEvent event){	
   	
-  		    
   	    // Loads all blocks 
   		EndBlocks.init();
   		
@@ -72,11 +73,13 @@ public class NewEnd_Main {
   		//Crafting
   		Crafting.loadrecipe();
   		
-  		//Smelting
+  		//Smelling
   		Crafting.loadSmelting();
   		
   		//Achievenets
   		Achievements.loadAchievements();
+  		
+  		
   		
   		//Loads fuel handler
   		//GameRegistry.registerFuelHandler(new FuelHandler());
@@ -86,7 +89,7 @@ public class NewEnd_Main {
   	@EventHandler
   	public void init(FMLInitializationEvent event){
   	
-  	
+  		FMLCommonHandler.instance().bus().register(new NewEndEvents());
   	}
   	
 //postInit loads everything that has to load after all mods have been loaded

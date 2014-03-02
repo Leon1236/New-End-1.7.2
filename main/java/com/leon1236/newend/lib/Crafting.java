@@ -61,10 +61,10 @@ public class Crafting
 	public static void loadSmelting()
 	{
 
-		GameRegistry.addSmelting(EndBlocks.BlockEndOre, new ItemStack(ModItems.ItemEndIngot), 5.0F);
-		GameRegistry.addSmelting(EndBlocks.BlockEndWood, new ItemStack(ModItems.ItemEndCharcoal), 3.0F);
-		GameRegistry.addSmelting(EndVanillaBlocks.BlockEndIronOre, new ItemStack(Items.iron_ingot), 3.0F);
-		GameRegistry.addSmelting(EndVanillaBlocks.BlockEndGoldOre, new ItemStack(Items.gold_ingot), 3.0F);
+		GameRegistry.addSmelting(EndBlocks.BlockEndOre, new ItemStack(ModItems.ItemEndIngot), 2.0F);
+		GameRegistry.addSmelting(EndBlocks.BlockEndWood, new ItemStack(ModItems.ItemEndCharcoal), 1.0F);
+		GameRegistry.addSmelting(EndVanillaBlocks.BlockEndIronOre, new ItemStack(Items.iron_ingot), 2.0F);
+		GameRegistry.addSmelting(EndVanillaBlocks.BlockEndGoldOre, new ItemStack(Items.gold_ingot), 2.0F);
 		
 	}
 }
