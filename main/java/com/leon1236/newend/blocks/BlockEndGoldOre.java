@@ -26,5 +26,10 @@ public class BlockEndGoldOre extends Block {
 			this.setBlockName(Strings.BlockEndGoldOre_NAME); //name of the block in texture folder
 			this.setBlockTextureName(References.MOD_ID + ":BlockEndGoldOre"); //sets texture for your block
 			}
-	
+	// Returns the quantity of items to drop on block destruction.
+    
+		public int quantityDropped(Random random)
+	    {
+	        return 1;
+	    }
 }

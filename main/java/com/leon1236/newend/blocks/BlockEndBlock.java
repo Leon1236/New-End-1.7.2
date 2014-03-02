@@ -1,7 +1,10 @@
 package com.leon1236.newend.blocks;
 
+import java.util.Random;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.init.Blocks;
 
 import com.leon1236.newend.NewEnd_Main;
 import com.leon1236.newend.lib.References;
@@ -20,5 +23,10 @@ public class BlockEndBlock extends Block {
 			this.setBlockTextureName(References.MOD_ID + ":BlockEndBlock"); //sets texture for your block
 			}
 	
-
+	// Returns the quantity of items to drop on block destruction.
+     
+	public int quantityDropped(Random random)
+    {
+        return 1;
+    }
 }

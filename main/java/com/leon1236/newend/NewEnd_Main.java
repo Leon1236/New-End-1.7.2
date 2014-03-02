@@ -6,9 +6,9 @@ import com.leon1236.newend.blocks.EndBlocks;
 import com.leon1236.newend.blocks.EndForestryBlocks;
 import com.leon1236.newend.blocks.EndIC2Blocks;
 import com.leon1236.newend.blocks.EndVanillaBlocks;
-import com.leon1236.newend.core.handlers.FuelHandler;
 import com.leon1236.newend.items.EndIC2Items;
 import com.leon1236.newend.items.ModItems;
+import com.leon1236.newend.lib.Achievements;
 import com.leon1236.newend.lib.Crafting;
 import com.leon1236.newend.lib.References;
 import com.leon1236.newend.lib.Tab_newend;
@@ -19,7 +19,6 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import cpw.mods.fml.common.registry.GameRegistry;
 
 
 //Basic stuff Forge needs
@@ -44,7 +43,7 @@ public class NewEnd_Main {
     public static CreativeTabs Tab_newend = new Tab_newend(CreativeTabs.getNextID(), References.MOD_ID);
    
     // World gen 
-   //  NewEnd_oregen eventmanager = new NewEnd_oregen();
+   //NewEnd_oregen eventmanager = new NewEnd_oregen();
 	
     
 //preInit loads all blocks, items, configurations and more
@@ -76,8 +75,11 @@ public class NewEnd_Main {
   		//Smelting
   		Crafting.loadSmelting();
   		
+  		//Achievenets
+  		Achievements.loadAchievements();
+  		
   		//Loads fuel handler
-  		GameRegistry.registerFuelHandler(new FuelHandler());
+  		//GameRegistry.registerFuelHandler(new FuelHandler());
   	}
   	
 //init loads all gui's, listeners and more

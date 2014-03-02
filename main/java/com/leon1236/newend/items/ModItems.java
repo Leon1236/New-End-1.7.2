@@ -53,10 +53,10 @@ public class ModItems {
 		EndShovel = new ToolEndShovel(EndToolMaterial);
 		
 		//Armor
-		endarmor_Helmet = new EndArmor(EndArmorMaterial, NewEnd_Main.proxy.addArmor("newendarmor"), 0).setUnlocalizedName("endarmor_Helmet").setCreativeTab(NewEnd_Main.Tab_newend).setTextureName(References.MOD_ID + ":endarmor_Helmet");
-		endarmor_Chestplate = new EndArmor(EndArmorMaterial, NewEnd_Main.proxy.addArmor("newendarmor"), 1).setUnlocalizedName("endarmor_Chestplate").setCreativeTab(NewEnd_Main.Tab_newend).setTextureName(References.MOD_ID + ":endarmor_Chestplate");
-		endarmor_Leggings = new EndArmor(EndArmorMaterial, NewEnd_Main.proxy.addArmor("newendarmor"), 2).setUnlocalizedName("endarmor_Leggings").setCreativeTab(NewEnd_Main.Tab_newend).setTextureName(References.MOD_ID + ":endarmor_Leggings");
-		endarmor_Boots = new EndArmor(EndArmorMaterial, NewEnd_Main.proxy.addArmor("newendarmor"), 3).setUnlocalizedName("endarmor_Boots").setCreativeTab(NewEnd_Main.Tab_newend).setTextureName(References.MOD_ID + ":endarmor_Boots");
+		endarmor_Helmet = new EndArmor(EndArmorMaterial, NewEnd_Main.proxy.addArmor("newendarmor"), 0);
+		endarmor_Chestplate = new EndArmor(EndArmorMaterial, NewEnd_Main.proxy.addArmor("newendarmor"), 1);
+		endarmor_Leggings = new EndArmor(EndArmorMaterial, NewEnd_Main.proxy.addArmor("newendarmor"), 2);
+		endarmor_Boots = new EndArmor(EndArmorMaterial, NewEnd_Main.proxy.addArmor("newendarmor"), 3);
 		
 		GameRegistry.registerItem(ItemEndIngot, "ItemEndIngot");
 		GameRegistry.registerItem(ItemEndCoal, "ItemEndCoal");

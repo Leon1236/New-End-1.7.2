@@ -1,7 +1,12 @@
 package com.leon1236.newend.blocks;
 
+import java.util.Random;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 
 import com.leon1236.newend.NewEnd_Main;
 import com.leon1236.newend.lib.References;
@@ -19,5 +24,14 @@ public class BlockEndLapisOre extends Block {
 			this.setBlockName(Strings.BlockEndLapisOre_NAME); //name of the block in texture folder
 			this.setBlockTextureName(References.MOD_ID + ":BlockEndLapisOre"); //sets texture for your block
 			}
-	
+	// Returns the quantity of items to drop on block destruction.
+	 public Item getItemDropped(int p_149650_1_, Random random, int p_149650_3_)
+	    {
+	        return Items.dye; //Almost working.... FIX meta drop
+	        }
+	 //How much of the item will be droped
+	 public int quantityDropped(Random random)
+	    {
+	        return 4 + random.nextInt(2);
+	    }
 }
