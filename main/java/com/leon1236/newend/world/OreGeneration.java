@@ -3,6 +3,7 @@ package com.leon1236.newend.world;
 import java.util.Random;
 
 import com.leon1236.newend.blocks.EndBlocks;
+import com.leon1236.newend.blocks.EndVanillaBlocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
@@ -35,7 +36,14 @@ public class OreGeneration implements IWorldGenerator  {
 		
         	//For testing purposes 
         	addOre(EndBlocks.BlockEndOre, world, random, x, z, 8, 5, 4, 13);
-        	
+        	addOre(EndVanillaBlocks.BlockEndCoalOre, world, random, x, z, 12, 10, 4, 70);
+        	addOre(EndVanillaBlocks.BlockEndDiamondOre, world, random, x, z, 8, 5, 4, 15);
+        	addOre(EndVanillaBlocks.BlockEndEmeraldOre, world, random, x, z, 5, 3, 4, 25);
+        	addOre(EndVanillaBlocks.BlockEndGoldOre, world, random, x, z, 8, 10, 4, 30);
+        	addOre(EndVanillaBlocks.BlockEndIronOre, world, random, x, z, 12, 15, 4, 70);
+        	addOre(EndVanillaBlocks.BlockEndLapisOre, world, random, x, z, 4, 10, 4, 20);
+        	addOre(EndVanillaBlocks.BlockEndQuartzOre, world, random, x, z, 5, 16, 4, 70);
+        	addOre(EndVanillaBlocks.BlockEndRedstoneOre, world, random, x, z, 8, 10, 4, 15);
         }
 	
 	private void generateNether(World world, Random random, int i, int j) {}

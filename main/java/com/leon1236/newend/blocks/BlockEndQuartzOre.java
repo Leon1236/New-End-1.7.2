@@ -4,6 +4,9 @@ import java.util.Random;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 
 import com.leon1236.newend.NewEnd_Main;
 import com.leon1236.newend.lib.References;
@@ -23,8 +26,14 @@ public class BlockEndQuartzOre extends Block {
 			}
 	// Returns the quantity of items to drop on block destruction.
     
-		public int quantityDropped(Random random)
-	    {
-	        return 1;
-	    }
+	// Returns the quantity of items to drop on block destruction.
+		 public Item getItemDropped(int p_149650_1_, Random random, int p_149650_3_)
+		    {
+		        return Items.quartz;
+		        }
+		 //How much of the item will be droped
+		 public int quantityDropped(Random random)
+		    {
+		        return 1;
+		    }
 }
