@@ -13,6 +13,7 @@ import com.leon1236.newend.lib.Crafting;
 import com.leon1236.newend.lib.NewEndEvents;
 import com.leon1236.newend.lib.References;
 import com.leon1236.newend.lib.Tab_newend;
+import com.leon1236.newend.world.OreGeneration;
 
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
@@ -21,6 +22,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
 
 
 //Basic stuff Forge needs
@@ -70,16 +72,6 @@ public class NewEnd_Main {
   		//IC2 Items
   		EndIC2Items.init();
   		
-  		//Crafting
-  		Crafting.loadrecipe();
-  		
-  		//Smelling
-  		Crafting.loadSmelting();
-  		
-  		//Achievenets
-  		Achievements.loadAchievements();
-  		
-  		
   		
   		//Loads fuel handler
   		//GameRegistry.registerFuelHandler(new FuelHandler());
@@ -89,7 +81,17 @@ public class NewEnd_Main {
   	@EventHandler
   	public void init(FMLInitializationEvent event){
   	
+  		//Ore Generation
+  		GameRegistry.registerWorldGenerator(new OreGeneration(), 0);
+  	    
+  		//Crafting
+  		Crafting.loadrecipe();
   		
+  		//Smelling
+  		Crafting.loadSmelting();
+  		
+  		//Achievenets
+  		Achievements.loadAchievements();
   	}
   	
 //postInit loads everything that has to load after all mods have been loaded
