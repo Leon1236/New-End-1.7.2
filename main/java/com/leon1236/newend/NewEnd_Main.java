@@ -89,14 +89,14 @@ public class NewEnd_Main {
   	@EventHandler
   	public void init(FMLInitializationEvent event){
   	
-  		FMLCommonHandler.instance().bus().register(new NewEndEvents());
+  		
   	}
   	
 //postInit loads everything that has to load after all mods have been loaded
   	@EventHandler
   	public void postInit(FMLPostInitializationEvent event){
   		
-  		
+  		FMLCommonHandler.instance().bus().register(new NewEndEvents());
   	}
   	
 }

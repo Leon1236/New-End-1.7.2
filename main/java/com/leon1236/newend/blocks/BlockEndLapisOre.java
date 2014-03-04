@@ -7,6 +7,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 
 import com.leon1236.newend.NewEnd_Main;
 import com.leon1236.newend.lib.References;
@@ -27,7 +28,7 @@ public class BlockEndLapisOre extends Block {
 	// Returns the quantity of items to drop on block destruction.
 	 public Item getItemDropped(int p_149650_1_, Random random, int p_149650_3_)
 	    {
-	        return Items.dye; //Almost working.... FIX meta drop
+	        return new ItemStack(Items.dye, 4).getItem(); //Almost working.... FIX meta drop
 	        }
 	 //How much of the item will be droped
 	 public int quantityDropped(Random random)
