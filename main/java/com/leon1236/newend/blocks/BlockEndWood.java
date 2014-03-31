@@ -20,7 +20,7 @@ public class BlockEndWood extends Block {
 		
 			super(p_i45394_1_);
 			this.setStepSound(Block.soundTypeWood);
-			this.setHardness(12.0F);
+			this.setHardness(8.0F);
 			this.setResistance(15.0F);
 			setCreativeTab(NewEnd_Main.Tab_newend); //place in creative tabs
 			this.setBlockName(Strings.BlockEndWood_NAME); //name of the block in texture folder

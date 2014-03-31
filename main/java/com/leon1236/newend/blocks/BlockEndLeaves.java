@@ -22,8 +22,8 @@ public class BlockEndLeaves extends Block {
 		
 			super(p_i45394_1_);
 			this.setStepSound(Block.soundTypeGrass);
-			this.setHardness(12.0F);
-			this.setResistance(15.0F);
+			this.setHardness(1.0F);
+			this.setResistance(5.0F);
 			setCreativeTab(NewEnd_Main.Tab_newend); //place in creative tabs
 			this.setBlockName(Strings.BlockEndLeaves_NAME); //name of the block in texture folder
 			this.setBlockTextureName(References.MOD_ID + ":BlockEndLeaves"); //sets texture for your block

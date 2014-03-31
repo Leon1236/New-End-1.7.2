@@ -2,6 +2,7 @@ package com.leon1236.newend.core.handlers;
 
 import java.util.ArrayList;
 
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
 import com.leon1236.newend.blocks.EndBlocks;
@@ -13,8 +14,9 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class FuelHandler implements IFuelHandler{
 
        public int getBurnTime(ItemStack fuel) {
-
-		return 0;
+    	   
+    	   if(fuel == new ItemStack(ModItems.ItemEndCharcoal));
+			return 3200;
 	}
 
 }

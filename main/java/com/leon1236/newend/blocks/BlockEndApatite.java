@@ -13,8 +13,8 @@ public class BlockEndApatite extends Block {
 		
 			super(p_i45394_1_);
 			this.setStepSound(Block.soundTypeStone);
-			this.setHardness(12.0F);
-			this.setResistance(15.0F);
+			this.setHardness(8.0F);
+			this.setResistance(10.0F);
 			setCreativeTab(NewEnd_Main.Tab_newend); //place in creative tabs
 			this.setBlockName(Strings.BlockEndApatiteOre_NAME); //name of the block in texture folder
 			this.setBlockTextureName(References.MOD_ID + ":BlockEndApatiteOre"); //sets texture for your block
